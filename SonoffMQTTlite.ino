@@ -6,11 +6,11 @@
 
 //fill in the details below
 
-#define ssid "yourwifi
-#define ssidPword "yourpassword
+#define ssid "yourwifi"
+#define ssidPword "yourpassword*
 #define mqttDevice "the downstairs lights"
-#define mqttUser "ausername
-#define mqttPword "auserpassword
+#define mqttUser "ausername"
+#define mqttPword "auserpassword" 
 #define mqttPort 8883
 #define commandTopic "the downstairs lights/switch"
 #define stateTopic "the downstairs lights/state"
@@ -186,6 +186,3 @@ goes to your raspi apache web server
 with php to mqtt script for sending mqtt to mosquittto broker   
 
 */
-
- */
-
