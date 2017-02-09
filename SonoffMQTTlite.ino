@@ -7,7 +7,7 @@
 //fill in the details below
 
 #define ssid "yourwifi"
-#define ssidPword "yourpassword*
+#define ssidPword "yourpassword"
 #define mqttDevice "the downstairs lights"
 #define mqttUser "ausername"
 #define mqttPword "auserpassword" 
