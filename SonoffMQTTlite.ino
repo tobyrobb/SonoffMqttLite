@@ -1,6 +1,7 @@
-
-//Toby Robb //working reliably jan2017
-//the minimum things i could think off to make my sonoff work with MQTT
+//Arduino IDE 1.6.12
+//SonoffMqttLite.ino
+//Toby Robb //working reliably jan 2017
+//the minimum things i could think of to make my sonoff work with MQTT
 
 
 //LOTS OF NOTES AT THE BOTTOM!!
