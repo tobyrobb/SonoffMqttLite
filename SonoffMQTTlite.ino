@@ -1,7 +1,10 @@
 
 //Toby Robb //working reliably jan2017
 //the minimum things i could think off to make my sonoff work with MQTT
-//some more notes at the end including how to setup a broker on raspi or similar
+
+
+//LOTS OF NOTES AT THE BOTTOM!!
+
 
 // find and replace //Serial with Serial to output some debugging messages
 // OR
