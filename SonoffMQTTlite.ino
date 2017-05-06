@@ -189,7 +189,7 @@ here are some example pi commands
 //sudo apt-get install mosquitto
 //sudo apt-get install mosquitto-clients
 cd to the mosquitto directory
-//cd /home/mosquitto
+//cd /home/mosquitto or possibly etc/mosquitto
 create a user
 //sudo mosquitto_passwd -c pwfile user
 
