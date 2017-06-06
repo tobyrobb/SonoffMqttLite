@@ -227,7 +227,7 @@ to publish to a topic
 There are lots of MQTT clients for Android, IOS, PC etc to make buttons and apps etc to control your stuff
 
 To be able to control directly from the web and use Google Home
-//sudo apt-get install appache2
+//sudo apt-get install apache2
 //sudo apt-get install php5
 find phpMQTT on git hub from bluerhinos
 https://github.com/bluerhinos/phpMQTT
