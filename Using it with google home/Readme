@@ -49,7 +49,7 @@ password_file /etc/mosquitto/pwfile
 ------
 
 to run the broker
-//sudo mosquitto -p 8883 -c /etc/mosquitto/mosquitto.conf
+//sudo mosquitto -p 8883 -c /etc/mosquitto/mosquitto.conf  add this command to rc.local under /etc/
 to listen to a topic
 //mosquitto_sub -h 192.168.1.1 -p 8883 -t topicname -u user -P password
 to publish to a topic
