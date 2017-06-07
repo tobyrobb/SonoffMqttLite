@@ -232,12 +232,12 @@ To be able to control directly from the web and use Google Home
 
 Now you have a web server running;
 www/var/html is the apache root directory
+go there to create two text files  mqtt.php and phpMQTT.php
 
-find phpMQTT on git hub from bluerhinos
-https://github.com/bluerhinos/phpMQTT
-alternatively create phpMQTT.php text file with contents from the bottom of this post and place in
-one last thing..
+
+
 create a text file in the apache directory var/www/html called mqtt.php with the following contents
+
 ///////////
 
 <?php
@@ -257,19 +257,29 @@ if ($mqtt->connect(true,NULL,"admin","IOT")) {
 
 /////////////
 
+creating phpMQTT.php
+you can find phpMQTT on git hub from bluerhinos
+https://github.com/bluerhinos/phpMQTT
+alternatively create phpMQTT.php text file with contents from the bottom of this post and place it into the file
 
-use like this http://192.168.1.1//mqtt.php?topic=kettle&message=1
+TO USE it, enter your mosquitto brokers IP into your browser of choice, with the topic
+and message as arguments
+like this http://192.168.1.1//mqtt.php?topic=kettle&message=1
 
 this would post the message "1" to the topic "kettle"  
 the kettle example above listens on a range of kettley subjects in case you or google use different phrasing to get the job done.
 
+one last thing..
+if you use your phone or anything else away from the house, forward port 80 etc (default browser requests) to your LANS rmosquitto IP and port 80
+
+BONUS
 *use it with tasker on adroid to make buttons or a control panel that makes an app like interface to all your stuff
 *use it with IFTT and its "google assistant" and "maker" channels to get google home to GET the webpage when you execute a voice command
 eg if google home hears phrase " Turn "the fan" on"
 then makers channel will request the web page http://192.168.1.40/mqtt.php?topic=the fan&message=1
 goes to your raspi apache web server with php to mqtt script >> sending mqtt to mosquittto broker   
 
-//EXTRAS: if you use your phone or anything else away from the house, forward port 80 etc (default browser requests) to your LANS raspberry pi IP and port 80
+
 
 
 //THIS IS THE phpMQTT.php file text contents
