@@ -229,9 +229,13 @@ There are lots of MQTT clients for Android, IOS, PC etc to make buttons and apps
 To be able to control directly from the web and use Google Home
 //sudo apt-get install apache2
 //sudo apt-get install php5
+
+Now you have a web server running;
+www/var/html is the apache root directory
+
 find phpMQTT on git hub from bluerhinos
 https://github.com/bluerhinos/phpMQTT
-alternatively create phpMQTT.php text file with contents from the bottom of this post and place in www/var/html which is the apache root directory
+alternatively create phpMQTT.php text file with contents from the bottom of this post and place in
 one last thing..
 create a text file in the apache directory var/www/html called mqtt.php with the following contents
 ///////////
@@ -244,7 +248,7 @@ $message = $_GET["message"];
 
 $mqtt = new phpMQTT("192.168.1.1", 8883, "outside caller coming from a browser"); //Change client name to something unique
 
-if ($mqtt->connect(true,NULL,"admin","AllTheThings")) {
+if ($mqtt->connect(true,NULL,"admin","IOT")) {
         $mqtt->publish($topic,$message);
         $mqtt->close();
 }
